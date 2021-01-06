@@ -1,0 +1,388 @@
+html, body {
+	  height: 100%;
+	  margin: 0;
+}
+
+.full-height {
+	 height: 100%;
+}
+
+/* welcome page start */
+.header_side{
+	background-image:url("image\\welcome herder.jpg");
+	padding-top:1%;
+	padding-bottom:1%;
+	width:100%;
+	height:auto;
+	min-width:260px;
+}
+header {
+	text-align: center;
+	font-size:30px;
+	color: white;
+	text-shadow: 3px 2px red;
+}
+
+.middle{
+	width:100%; 
+	height:auto;
+	background-image: url("image\\blur pharmacy.jpg");
+	min-width:250px;
+	padding-bottom:5px;
+	padding-top:5px;
+}
+
+.loginBox{
+	width:20%;
+	height:auto;
+	background:black;
+	color:white;
+	padding:2%;
+	min-width:250px;
+	min-height:200px;
+	margin: 0 auto;
+	display:block;
+}
+
+.loginBox p{
+	margin:0;
+	padding:0;
+	front-weight: bold;
+}
+
+.loginBox input{
+	width: 90%;
+	margin-bottom: 10px; 
+}
+
+.loginBox input[type="text"], input[type="password"]{
+	border:none;
+	border-bottom:1px solid white;
+	background:transparent;
+	color:white;
+	font-size:16px;
+}
+
+.popup_registration{
+	color:black;width:84%; height:35px;background:white; margin-top:15px;border:1px solid #b1cdcd;font-size:14px;
+}
+
+.popup_main_div{
+	width:100%;height:100%;display:none;z-index:1;position:fixed;background: rgba(0, 0, 0,.7);
+}
+
+.popup_registration_div{
+	width:40%;height:auto;display:block;background:#eff5f5;z-index:1; text-align:center; margin:70px auto;min-width:230px;
+}
+
+.loginBox input[type="submit"]{
+	border :none;
+	height: 40px;
+	background:red;
+	color:white;
+	font-size: 18px;
+	border-radius:20px;
+	float:left;
+}
+
+.loginBox input[type="submit"]:hover{
+	background:green;
+	color:white;
+	cursor:pointer;
+} 
+
+.loginBox a{
+	font-size:12px;
+	color:grey;
+}
+
+.loginBox a:hover{
+	color:pink;
+	cursor:pointer;
+}
+
+img.circle {
+	  width: 15%;
+	  border-radius: 50%;
+	  margin: 0 auto;
+	  display: block;
+	  
+}
+
+a:link, a:visited {
+	background-color: black;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+.footer{
+	padding-top:5px;
+	width:100%;
+	height:auto;
+	background:#252847;
+	min-height:130px;
+	min-width:260px;
+}
+.footer_right{
+	width:30%;
+	height:auto;
+	float:right;
+}
+.footer_right img{
+	width:50px;
+	height:50px;
+	float:right;
+	margin-right:10%;
+	margin-top:2%;
+}
+.footer_left{
+	width:20%;
+	height:100%;
+}
+
+
+/* dashboard start */
+
+
+.head{
+	width:100%;
+	height:auto;
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+	background:blue;
+	color: white;
+	min-width:200px;
+}
+
+
+.menu{
+	width:100%;
+	height:auto;
+	background:black;
+	color: white;
+	float:left;
+	min-width:200px;
+}
+.menu a{
+	float:left;
+	border:0px solid black;
+	padding-left:1%;
+	padding-right:1%;
+	border:1px solid white;
+	display:inline;
+}
+.menu a:hover{
+	background:blue;
+	color:white;
+	cursor:pointer;
+}
+
+.title_edit{
+	text-shadow: 3px 2px red;
+	text-align:center;
+}
+
+.main_div_dashboard{
+	width:100%;
+	height:auto;
+	float:left;
+	min-width:200px;
+}
+.box_degin_1{
+	width:30%;
+	height:15%;
+	border:2px solid black;
+	background:white;
+	color:#CE5DF8;
+	float:left;
+	margin:1%;
+	min-width:120px;
+	min-height:100px;
+	max-height:150px;
+}
+
+h3{
+	text-align:center;
+}
+h4{
+	text-align:center;
+}
+
+
+
+/* sales */
+
+table,th,td{
+	border:2px solid black;
+	border-collapse:collapse;
+}
+th,td{
+	text-align: center;
+	background-color:white;
+}
+table {
+	width:100%;
+}
+
+.main_div_sales{ 
+	width:100%; 
+	height:auto;
+	float:left;
+	min-height:500px;
+}
+.sale_table{
+	width:100%;
+	float:left;
+	min-width:320px;
+}
+.table_border_none{
+	border:2px solid white;
+	border-collapse:collapse;	
+}
+.table_border_none input[type="search"]{
+	min-width:170px;
+}
+.sale_amount{
+	float:right;
+	width:30%;
+	min-width:320px;
+}
+.sale_search_button{
+	width:100%;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+
+
+/* product */
+
+.main_div_product{
+	width:100%; height:auto;min-width:430px; float:left;
+}
+
+.supplier_documant{	
+	width:100%;
+	height:auto;
+	margin:0 auto;
+	min-width:430px;
+}
+.table_transparent{
+	background:transparent;
+	padding:5px;
+}
+
+input[type="number"]{
+	width:90%;
+	min-width:170px;
+}
+input[type="date"]{
+	font-size:14px;
+	width:90%;
+	min-width:170px;
+}
+
+input[type="submit"]{
+	outline: none;
+	height: 40px;
+	background:red;
+	color:white;
+	font-size: 18px;
+	float:right;
+}
+input[type="submit"]:hover{
+	background:green;
+	color:white;
+
+} 
+/* ............ */
+.delete{
+	display:block;
+	height:auto;
+}
+
+.delete i[class="fa fa-edit"]:hover{
+	color:green;
+}
+
+/* customer */
+
+
+.main_div_customer{
+	width:100%; height:auto;min-height:500px; float:left;
+}
+.link_customer{
+	background:white;
+}
+
+.popup_customer_main_div{
+	width:100%;height:100%;display:block;background:red;z-index:1;position:fixed;background:rgba(0, 0, 0,.7);
+}
+
+.popup_customer_div{
+	width:80%;height:auto;display:block;background:#eff5f5;z-index:1; text-align:centen; margin:100px auto;min-width:230px;overflow: scroll;
+}
+
+
+
+
+/* supplier */
+
+.main_div_supplier{
+	width:100%; height:auto;min-height:500px; float:left;
+}
+
+.popup_supplier_main_div{
+	width:100%;height:100%;display:block;background:red;z-index:1;position:fixed;background: rgba(0, 0, 0,.7);
+}
+
+.popup_supplier_div{
+	width:80%;height:auto;display:block;background:#eff5f5;z-index:1; text-align:centen; margin:100px auto;min-width:230px;overflow: scroll;
+}
+
+/* sales_report */
+
+.main_div_sales_report{
+	width:100%;height:auto;float:left;
+	min-width:370px;
+}
+.form_date{
+	width:100%;height:auto;float:left;
+	min-width:370px;
+}
+.form_date input[type="date"]{
+	border:none;
+	/* border-bottom:1px solid white; */
+	color:black;
+	font-size:15px;
+	width:100%;
+	min-width:50px;
+}
+
+.profit{
+	width:100%;height:auto;min-width:370px;
+}
+
+/* stock report */
+
+
+.Search_product{
+	width:100%; height:auto; float:left;
+}
+
+
+@media only screen and (max-width: 500px) {
+	
+	.sale_amount{
+		float:left;
+	}
+	.menu a{
+		width: 98%;
+		height: auto;
+		background:black;color: white; float:left;
+		display:block;
+	}
+	
+	
+}

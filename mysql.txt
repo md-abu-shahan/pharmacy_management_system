@@ -1,0 +1,91 @@
+// mysql.exe -u root -pass
+
+create database pms;
+
+create table login(
+	user varchar(50) primary key,
+	pass bigint(20) not null,
+	phone bigint(20) not null
+);
+
+create table supplier(
+	supplier_name varchar(50) not null,
+	supplier_phone bigint(20) primary key,
+	company_name varchar(50) not null,
+	due bigint(20) not null,
+	last_prement bigint(20) not null
+);
+
+create table product(
+	supplier_phone bigint(20),
+	foreign key (supplier_phone) references supplier (supplier_phone),
+	product_name varchar(50) not null,
+	generic_name varchar(50) not null,
+	category varchar(50) not null,
+	qty bigint(20) not null,
+	date date not null,
+	time time not null,
+	expire_date date not null,
+	original_price bigint(20) not null,
+	selling_price bigint(20) not null
+);
+
+create table customer(
+	customer_name varchar(50) not null,
+	customer_phone bigint(20) primary key,
+	due bigint(20) not null,
+	last_prement bigint(20) not null
+);               
+
+create table sale(
+	customer_phone bigint(20),
+	foreign key (customer_phone) references customer (customer_phone),
+	product_name varchar(50) not null,
+	qty bigint(20) not null,
+	date date not null,
+	time time not null
+);
+
+create table stock(
+	product_name varchar(50),
+	foreign key (product_name) references sale (product_name),
+	generic_name varchar(50) not null,
+	category varchar(50) not null,
+	qty bigint(20) not null,
+	expire_date date not null,
+	price bigint(20) not null
+);
+
+
+create table demo_sales(
+	product_name varchar(50) not null,
+	qty bigint(20) not null
+);
+create table demo_product(
+	product_name varchar(50) not null,
+	generic_name varchar(50) not null,
+	category varchar(50) not null,
+	expire_date varchar(50) not null,
+	qty bigint(20) not null,
+	original_price varchar(20) not null,
+	selling_price varchar(20) not null
+);
+create table per_customer(
+	Sphone varchar(50) not null,
+	product_name varchar(50) not null,
+	qty bigint(20) not null,
+	date varchar(20) not null,
+	time varchar(20) not null
+);
+create table per_supplier(
+	Sphone varchar(50) not null,
+	product_name varchar(50) not null,
+	qty bigint(20) not null,
+	category varchar(20) not null,
+	date varchar(20) not null,
+	time varchar(20) not null,
+	generic_name varchar(50) not null,
+	expire_date varchar(50) not null,
+	original_price varchar(20) not null,
+	selling_price varchar(20) not null
+);
